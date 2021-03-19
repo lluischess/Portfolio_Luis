@@ -1,0 +1,22 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@600&family=Roboto+Mono:wght@300;500&display=swap');
+
+/* Variables */
+:root{
+    /* Colors */
+    --primary-color: #512B78;
+    --secondary-color: #B8B8B8;
+    --third-color:#8448C1;
+
+}
+
+/* Añadimos estilos al html y a la web goblal le damos estructura */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 10px;
+}

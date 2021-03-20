@@ -37,8 +37,28 @@ a{
 }
 .container{
     width: 90%;
+    height:100%;
     margin: 0 auto;
     max-width: 1000px;
+}
+.primary-btn {
+    display: inline-block;
+    background-color: var(--third-color);
+    color: white;
+    font-size: 18px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 50px;
+}
+.buttons{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.buttons svg {
+    width: 50px;
+    color: var(--primary-color);
 }
 
 /* Presentation */
@@ -66,32 +86,60 @@ a{
     color: var(--primary-color);
 }
 #Presentation .left_panel .heading1 {
-    font-size: 5rem;
+    font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
 #Presentation .left_panel .description {
     margin-top: 2.5rem;
     max-width: 400px;
-    font-size: 1.6rem;
+    font-size: 16px;
     color: var(--third-color);
 }
-#Presentation .left_panel .buttons{
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
+#Presentation .right_panel {
+    text-align: right;
 }
-#Presentation .left_panel .buttons svg {
-    width: 50px;
-    color: var(--primary-color);
+#Presentation .right_panel img{
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 30%;
 }
-#Presentation .left_panel .buttons .primary-btn {
-    display: inline-block;
-    background-color: var(--third-color);
-    color: white;
-    font-size: 1.8rem;
-    padding: 0.6rem 1.6rem;
-    border-radius: 50px;
+
+/* Responsive */
+
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 9px;
+    }
+    #Presentation .container{
+        flex-direction: column-reverse;
+    }
+    #Presentation .container .right_panel {
+        text-align: center;
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+    #Presentation .container .right_panel img{
+        width: 100%;
+        height: 400px;
+    }
+    #Presentation .container .left_panel{
+        text-align: center;
+        padding: 0;
+        flex: 1;
+        height: fit-content;
+    }
+    #Presentation .left_panel .buttons{
+        justify-content: center;
+    }
+    #Presentation .container .left_panel .heading1{
+        font-size:  4rem;
+        margin: 0 auto;
+    }
+    #Presentation .container .left_panel .description{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
 }

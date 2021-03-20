@@ -1,7 +1,7 @@
-/* Google Fonts */
+/*************** Google Fonts ***************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@600&family=Roboto+Mono:wght@300;500&display=swap');
 
-/* Variables */
+/*************** Variables ***************/
 :root{
     /* Colors */
     --primary-color: #512B78;
@@ -11,7 +11,7 @@
 
 }
 
-/* Estructuras Gobales */
+/*************** Estructuras Gobales ***************/
 *{
     padding: 0;
     margin: 0;
@@ -37,7 +37,6 @@ a{
 }
 .container{
     width: 90%;
-    height:100%;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -61,12 +60,15 @@ a{
     color: var(--primary-color);
 }
 
-/* Presentation */
+/******************** Presentation **********************/
 
 #Presentation {
     height: 100vh;
     width: 100%;
     padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #Presentation .container {
     display: flex;
@@ -107,7 +109,7 @@ a{
     object-position: 50% 30%;
 }
 
-/* Responsive */
+/********************* Responsive **************************/
 
 @media only screen and (max-width: 768px){
     html{
@@ -141,5 +143,10 @@ a{
     #Presentation .container .left_panel .description{
         margin: 0 auto;
         margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 950px){
+    #Presentation .container .right_panel{
+        flex: 6;
     }
 }

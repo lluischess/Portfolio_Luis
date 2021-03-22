@@ -36,6 +36,10 @@ a{
     color: black;
     text-decoration: none;
 }
+p {
+    font-size: 16px;
+    color: var(--third-color);
+}
 section{
     display: flex;
     align-items: center;
@@ -133,8 +137,6 @@ section{
 #Presentation .left_panel .description {
     margin-top: 2.5rem;
     max-width: 400px;
-    font-size: 16px;
-    color: var(--third-color);
     /* opacity: 0;
     animation: fade 0.3 ease forwards;
     animation-delay: 1s; */
@@ -150,6 +152,65 @@ section{
     object-position: 50% 30%;
 }
 
+/********************* Tecnologys **************************/
+#tecno {
+    padding: 10rem 0;
+}
+
+#tecno .all-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tecno .item {
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+#tecno .item:nth-child(1):hover {
+    background-color: rgb(8 69 241 / 35%);
+}
+#tecno .item:nth-child(2):hover {
+    background-color: rgb(0, 255, 115, 0.151);
+}
+#tecno .item:nth-child(3):hover {
+    background-color: #cbbef093;
+}
+#tecno .item .icon {
+    width: 50px;
+    height: 50px;
+    padding: .8rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+#tecno .item-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+}
+#tecno .item-desc {
+    color: var(--third-color);
+}
+#tecno .item:nth-child(1) .icon {
+    background-color: rgb(7 106 255 / 37%);
+}
+#tecno .item:nth-child(2) .icon {
+    background-color: rgb(0, 255,155, 0.493);
+}
+#tecno .item:nth-child(3) .icon {
+    background-color: #4705fc80;
+}
+#tecno .tecno-heading {
+    font-size: clamp(2rem, 10vw, 6rem);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    letter-spacing: 0.2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10rem;
+}
 /********************* Responsive **************************/
 @media only screen and (max-width: 950px){
     #Presentation .container .right_panel{

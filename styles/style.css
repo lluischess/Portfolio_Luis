@@ -1,6 +1,7 @@
 /*************** Google Fonts ***************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@600&family=Roboto+Mono:wght@300;500&display=swap');
 
+
 /*************** Variables ***************/
 :root{
     /* Colors */
@@ -88,15 +89,14 @@ section{
     font-weight: 500;
     text-transform: uppercase;
     color: var(--primary-color);
-    opacity: 0;
-    animation: fade 0.3 ease-in forwards;
-    animation-delay: 1s;
+    /* opacity: 0;
+    animation: fade 0.3 ease forwards;
+    animation-delay: 1s; */
 }
-#Presentation .left_panel .buttons{
+/* #Presentation .left_panel .buttons{
     opacity: 0;
-    animation: fade 0.3 ease-in forwards;
-    animation-delay: 1s;
-}
+    /* animation: fade 0.3 ease forwards; */
+    /* animation-delay: 1s; */
 #Presentation .left_panel .heading1 {
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
@@ -108,36 +108,36 @@ section{
 }
 #Presentation .left_panel .heading1 .wrapper span{
     position: relative;
-    bottom: -70px;
-    animation: reveal 1s ease-in forwards;
+    /* bottom: -70px; */
+    /* animation: reveal 1s ease forwards; */
 }
 /***************** ANIMACION Heading *****************/
-@keyframes reveal {
+/* @keyframes reveal {
     0% {
         bottom: -70px;
     }
     100%{
         bottom: 0px;
     }
-}
-@keyframes fade {
+} */
+/* @keyframes fade {
     0% {
         opacity: 0;
     }
     100% {
-        opacity: 100;
+        opacity: 10;
     }
 }
-
+ */
 
 #Presentation .left_panel .description {
     margin-top: 2.5rem;
     max-width: 400px;
     font-size: 16px;
     color: var(--third-color);
-    opacity: 0;
-    animation: fade 0.3 ease-in forwards;
-    animation-delay: 1s;
+    /* opacity: 0;
+    animation: fade 0.3 ease forwards;
+    animation-delay: 1s; */
 }
 #Presentation .right_panel {
     text-align: right;
@@ -151,7 +151,11 @@ section{
 }
 
 /********************* Responsive **************************/
-
+@media only screen and (max-width: 950px){
+    #Presentation .container .right_panel{
+        flex: 6;
+    }
+}
 @media only screen and (max-width: 768px){
     html{
         font-size: 9px;
@@ -184,10 +188,5 @@ section{
     #Presentation .container .left_panel .description{
         margin: 0 auto;
         margin-top: 2rem;
-    }
-}
-@media only screen and (max-width: 950px){
-    #Presentation .container .right_panel{
-        flex: 6;
     }
 }

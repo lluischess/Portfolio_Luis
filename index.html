@@ -6,15 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
+    <!-- AOS --> <!-- CDN CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+
     <!-- Presentation -->
     <section id="Presentation">
         <div class="container">
+
             <!-- Left part of the section-->
-            <div class="left_panel">
+            <div class="left_panel"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
+
                 <p class="subheading">Hello, my name is</p>
                 <h1 class="heading1">
                     <div class="wrapper"><span>Luis</span></div>
@@ -33,11 +44,26 @@
                         </svg></a>
                 </div>
             </div>
+
             <!-- Right part of the section-->
-            <div class="right_panel">
+            <div class="right_panel"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
+
                 <img src="./images/LluisFoto.jpg" alt="Lluis Casamajor Paloma">
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- CDN JS -->
+    <!-- <script src="js/aos/aos.js"></script> --> <!-- Local -->
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
-</html>
+</html> 

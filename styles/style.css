@@ -227,7 +227,7 @@ section{
     background-color: #4705fc80;
 }
 
-/********************* Responsive **************************/
+/********************* Responsive Presentation**************************/
 @media only screen and (max-width: 950px){
     #Presentation .container .right_panel{
         flex: 6;
@@ -265,5 +265,30 @@ section{
     #Presentation .container .left_panel .description{
         margin: 0 auto;
         margin-top: 2rem;
+    }
+}
+
+/********************* Responsive Technologys**************************/
+
+@media only screen and (max-width: 768px){
+    #tecno .all-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    #tecno .item .icon {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    #tecno .item {
+        margin: 2rem 0;
+    }
+    #tecno .item:nth-child(1) {
+        background-color: rgb(8 69 241 / 35%);
+    }
+    #tecno .item:nth-child(2) {
+        background-color: rgb(0, 255, 115, 0.151);
+    }
+    #tecno .item:nth-child(3) {
+        background-color: #cbbef093;
     }
 }

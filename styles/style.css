@@ -226,6 +226,15 @@ section{
 #tecno .item:nth-child(3) .icon {
     background-color: #4705fc80;
 }
+/********************* Tecnologys **************************/
+#about {
+    padding: 15rem 0;
+}
+#about .wrapper {
+    display: ;
+}
+
+
 
 /********************* Responsive Presentation**************************/
 @media only screen and (max-width: 950px){

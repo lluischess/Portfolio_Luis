@@ -285,9 +285,58 @@ section{
 #about .right .right-text {
     color: var(--secondary-color);
 }
+/********************* Projects**************************/
 
-
-
+#projects {
+    padding: 10rem 0;
+}
+#projects .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+#projects .item::nth-child(even){
+    flex-direction: row-reverse;
+}
+#projects .item .left {
+    flex: 1;
+}
+#projects .item .right {
+    flex: 1;
+    margin-left: -150px;
+    background-color: var(--body-bg);
+    padding: 5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 28px #00000028;
+    z-index: 2;
+}
+#projects .item::nth-child(even) .right {
+    margin-left: 0;
+}
+#projects .item::nth-child(even) .left {
+    margin-left: -150px;
+}
+#projects .item .left .img {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #4705fc33;
+}
+#projects .item .left .img::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #5a24ed38;
+}
+#projects .item .left .img  img{
+    object-fit: cover;
+}
 
 /********************* Responsive Presentation**************************/
 @media only screen and (max-width: 950px){

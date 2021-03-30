@@ -5,10 +5,10 @@
 /*************** Variables ***************/
 :root{
     /* Colors */
-    --primary-color: #512B78;
+     --primary-color: #512B78;
     --secondary-color: rgb(77, 77, 77);
     --third-color:#411fa0;
-    --body-bg: #efebfa;
+    --body-bg: #efebfa; 
 
 }
 
@@ -324,6 +324,7 @@ section{
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0px 0px 20px #4705fc33;
+    position: relative;
 }
 #projects .item .left .img::after {
     position: absolute;
@@ -336,6 +337,34 @@ section{
 }
 #projects .item .left .img  img{
     object-fit: cover;
+    transition: 0.3 ease transform;
+}
+#projects .item:hover .left .img img {
+    transform: scale(1.1);
+    z-index: 1;
+}
+#projects .item .right .project-title {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+#projects .item .right .project-sub-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+#projects .item .right .project-desc {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+#projects .item .right .buttons .external-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: calc(0.6em - 5px) calc(0.6em - 5px);
+}
+#projects .item .right .buttons .external-link svg{
+    width: 25px;
 }
 
 /********************* Responsive Presentation**************************/
@@ -415,6 +444,36 @@ section{
         flex-direction: column;
     }
     #about .right .buttons a{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/********************* Responsive Projects**************************/
+@media only screen and (max-width: 768px) {
+    #projects .item {
+        flex-direction: column;
+    }
+    #projects .item .left {
+        width: 100%;
+    }
+    #projects .item .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -150px;
+    }
+    #projects .item:nth-child(even) {
+     flex-direction: column;   
+    }
+    #projects .item:nth-child(even) {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:450px) {
+    #projects .item .right .buttons {
+        flex-direction: column;
+    }
+    #projects .item .right .buttons a {
         width: 100%;
         text-align: center;
     }

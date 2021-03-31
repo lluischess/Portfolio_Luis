@@ -375,8 +375,9 @@ section{
 }
 #footer footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 #footer footer .col1 {
     flex: 3;
@@ -396,10 +397,53 @@ section{
 #footer footer .col1 p{
     color: white;
 }
-
 #footer footer .col4 svg{
     max-width: 24px;
+    color: white;
 }
+#footer footer .column-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+#footer footer ul li{
+    background-color: 4px;
+}
+#footer footer ul li a{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+#footer footer lu li:hover a{
+    color: var(--primary-color);
+}
+#footer footer lu li:hover {
+    background-color: white;
+}
+#footer footer .col4 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer footer .col4 ul li a {
+    min-width: 50%;
+}
+
+/********************* Copyright *************************************/
+
+#copyright {
+    padding: 1rem 0;
+    background-color: #221052;
+}
+#copyright p{
+    color: white;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
 
 /********************* Responsive Presentation**************************/
 @media only screen and (max-width: 950px){
@@ -509,6 +553,36 @@ section{
     }
     #projects .item .right .buttons a {
         width: 100%;
+        text-align: center;
+    }
+}
+
+/********************* Responsive Footer**************************/
+
+@media only screen and (max-width: 768px){
+    #footer footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #footer footer .col1,
+    #footer footer .col2,
+    #footer footer .col3,
+    #footer footer .col4 {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    #footer footer .col4 ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+/********************* Responsive Copyright *************************************/
+
+@media only screen and (max-width: 768px){
+    #copyright p{
         text-align: center;
     }
 }

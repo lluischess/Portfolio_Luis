@@ -106,8 +106,8 @@ section{
 /********************* Scroll Top *************************************/
 .scroll-top {
     z-index: 100;
-    width: 58px;
-    height: 50px;
+    width: 48px;
+    height: 44px;
     background-color: white;
     position: fixed;
     bottom: 10px;

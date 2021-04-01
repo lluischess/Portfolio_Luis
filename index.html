@@ -1,364 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
 
-    <!-- AOS -->
-    <!-- CDN CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
+        <!-- AOS -->
+        <!-- CDN CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
 
-<body>
-    <!-- Scroll to top button-->
-    <div class="scroll-top">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
-          </svg>
-    </div>
-    <!-- Nav Section -->
-    <section id="nav">
-        <div class="container">
-            <div class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
+    <body>
+        <!-- Scroll to top button-->
+        <div class="scroll-top">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
+                24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+                </svg>
             </div>
-        </div>
-    </section>
-    <section id="nav-content">
-        <div class="close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-        </div>
-        <div class="wrapper">
-            <h2 class="section-heading" data-outline="Menu">Menu</h2>
-        </div>
-        <nav>
-            <ul> <!-- Menu Links-->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tecnologies</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!-- Presentation -->
-    <section id="Presentation">
-        <div class="container">
-
-            <!-- Left part of the section-->
-            <div class="left_panel" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500"
-                data-aos-easing="ease-in-out" data-aos-once="true">
-
-                <p class="subheading">Hello, my name is</p>
-                <h1 class="heading1">
-                    <div class="wrapper"><span>Luis</span></div>
-                    <div class="wrapper"><span>Casamajor</span></div>
-                    <div class="wrapper"><span>Paloma</span></div>
-                </h1>
-                <p class="description">I'm Backend Developer specialized in
-                    web projects carried out
-                    with Django Framework.</p>
-                <div class="buttons">
-                    <a href="#" class="primary-btn">See my projects</a>
-                    <!--Icono de la web https://heroicons.com/-->
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0
-                                    110-18 9 9 0 010 18z" />
-                        </svg></a>
-                </div>
-            </div>
-
-            <!-- Right part of the section-->
-            <div class="right_panel" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1500"
-                data-aos-easing="ease-in-out" data-aos-once="true">
-
-                <img src="./images/LluisFoto.jpg" alt="Lluis Casamajor
-                            Paloma">
-            </div>
-        </div>
-    </section>
-
-    <!-- Tecnologías -->
-    <section id="tecno">
-        <div class="container">
-            <h2 class="section-heading" data-outline="Used technology">Used
-                technology</h2>
-            <div class="all-items">
-                <div class="item">
-                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4
-                                        4-4" />
-                        </svg></div>
-                    <h3 class="item-heading">Backend Stuff</h3>
-                    <p class="item-desc">Using <Strong>Python</Strong>
-                        as the main programming language and
-                        complementing it with its most famous
-                        framework, <Strong>Django</Strong>, I create
-                        powerful, safe and dynamic web applications
-                        without forgetting the creation of Api-rest
-                        with the <strong>Django REST Framework</strong>
-                        technology.</p>
-                </div>
-
-                <div class="item">
-                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 7v10c0 2.21
-                                            3.582 4 8 4s8-1.79
-                                            8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79
-                                            8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8
-                                            4m0
-                                            5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                        </svg></div>
-                    <h3 class="item-heading">Use of Databases</h3>
-                    <p class="item-desc">Constant knowledge of
-                        the
-                        <Strong>Mysql and PosgretSQL</Strong>
-                        database managers used in almost all my
-                        projects, other tools that I use and
-                        know
-                        are such as <Strong> Firebase or
-                            Microsoft
-                            SQL Server</Strong>
-                    </p>
-                </div>
-
-                <div class="item">
-                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9
-                                                20l-1
-                                                1h8l-1-1-.75-3M3 13h18M5 17h14a2
-                                                2 0
-                                                002-2V5a2 2 0 00-2-2H5a2 2 0
-                                                00-2
-                                                2v10a2 2 0 002 2z" />
-                        </svg></div>
-                    <h3 class="item-heading">Front-end</h3>
-                    <p class="item-desc">I also have basic
-                        knowledge of HTML5, CSS3,
-                        Javascript,
-                        PHP, Wordpress and SEO.I also have basic
-                        knowledge of HTML5, CSS3,
-                        Javascript,
-                        PHP, Wordpress and SEO.</p>
-                </div>
-            </div>
-    </section>
-
-    <!-- About me -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-heading" data-outline="About">About</h2>
-            <div class="wrapper">
-                <div class="left">
-                    <div class="card">
-                        <div class="img">
-                            <img src="./images/LluisFoto.jpg" alt="Icon lluis
-                                                        casamajor">
-                        </div>
-                        <p class="card-desc">Graduated
-                            in
-                            multi-platform application
-                            development and in
-                            construction
-                            of new knowledge in the
-                            world of
-                            web development with
-                            constant
-                            renewal. Python Lover</p>
-                        <h3 class="card-name">Backend
-                            Developer</h3>
-                        <p class="card-sub-title">Django
-                            Specialized
-                        </p>
-                    </div>
-                </div>
-                <div class="right">
-                    <p class="subheading">Some about me</p>
-                    <h2 class="slogan">Backend Developer</h2>
-                    <p class="right-text">My main
-                        objective is to develop
-                        professionally and evolve
-                        specializing in Backend
-                        development, I consider myself
-                        an organized person with great
-                        motivation, capable of adapting
-                        to new technologies or different
-                        environments. I love to continue
-                        learning and train myself to be
-                        able to give a little more
-                        quality and value to my projects
-                        every day.</p>
-                    <div class="buttons">
-                        <a href="./files/CV_Lluis_Casamajor.pdf" class="primary-btn">Download
-                            CV</a>
-                        <a href="https://www.linkedin.com/in/llu%C3%ADs-casamajor-paloma-b338a2206/" target="_blank"
-                            class="primary-btn
-                                                    outline">Linkedin</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Projects-->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-heading" data-outline="Projects">Projects</h2>
-            <div class="all-items">
-                <div class="item">
-                    <div class="left">
-                        <div class="img">
-                            <img src="./images/LluisFoto.png" alt="Project">
+            <!-- Nav Section -->
+            <section id="nav">
+                <div class="container">
+                    <div class="nav-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="right">
-                        <h2 class="project-title">EventCraft</h2>
-                        <h3 class="project-sub-title">Segundo
-                            titulo</h3>
-                        <p class="project-desc">This project
-                            is for HTML & CSS practice. AMY
-                            is a fictional character. She is
-                            a freelance web designer. We
-                            made this nice portfolio for her
-                            with mainly HTML & CSS. Though
-                            we used few lines of JS but the
-                            main purpose of this project is
-                            to practice HTML & CSS. We are
-                            going to learn lots of </p>
-                        <div class="buttons">
-                            <a href="" class="primary-btn">Github</a>
-                            <a href="" class="primary-btn outline external-link"><span>Know more</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
-                                </svg></a>
+                </section>
+                <section id="nav-content">
+                    <div class="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
                         </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="left">
-                        <div class="img">
-                            <img src="./images/LluisFoto.png" alt="Project">
+                        <div class="wrapper">
+                            <h2 class="section-heading" data-outline="Menu">Menu</h2>
+                            <nav>
+                                <ul> <!-- Menu Links-->
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Tecnologies</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                    </div>
-                    <div class="right">
-                        <h2 class="project-title">EventCraft</h2>
-                        <h3 class="project-sub-title">Segundo
-                            titulo</h3>
-                        <p class="project-desc">This project
-                            is for HTML & CSS practice. AMY
-                            is a fictional character. She is
-                            a freelance web designer. We
-                            made this nice portfolio for her
-                            with mainly HTML & CSS. Though
-                            we used few lines of JS but the
-                            main purpose of this project is
-                            to practice HTML & CSS. We are
-                            going to learn lots of </p>
-                        <div class="buttons">
-                            <a href="" class="primary-btn">Github</a>
-                            <a href="" class="primary-btn outline external-link"><span>Know more</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
-                                </svg></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="left">
-                        <div class="img">
-                            <img src="./images/LluisFoto.png" alt="Project">
-                        </div>
-                    </div>
-                    <div class="right">
-                        <h2 class="project-title">EventCraft</h2>
-                        <h3 class="project-sub-title">Segundo
-                            titulo</h3>
-                        <p class="project-desc">This project
-                            is for HTML & CSS practice. AMY
-                            is a fictional character. She is
-                            a freelance web designer. We
-                            made this nice portfolio for her
-                            with mainly HTML & CSS. Though
-                            we used few lines of JS but the
-                            main purpose of this project is
-                            to practice HTML & CSS. We are
-                            going to learn lots of </p>
-                        <div class="buttons">
-                            <a href="" class="primary-btn">Github</a>
-                            <a href="" class="primary-btn outline external-link"><span>Know more</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
-                                </svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Footer-->
-    <section id="footer">
-        <div class="container">
-            <footer>
-                <div class="col1">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="./images/LluisFoto.jpg" alt="logo">
-                        </a>
-                    </div>
-                    <p>Texto fasfasfasfwefwaefasefawfawefwafewqa</p>
-                </div>
-                <div class="col2">
-                    <h2 class="column-heading">Important Link</h2>
-                    <ul>
-                        <li><a href="#Presentation">Home</a></li>
-                        <li><a href="#tecno">Tecnologies</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                </div>
-                <div class="col3">
-                    <h2 class="column-heading">Contact info</h2>
-                    <ul>
-                        <li><a href="#Presentation">contact@lluis.com</a></li>
-                        <li><a href="">Barcelona, Spain</a></li>
-                    </ul>
-                </div>
-                <div class="col4">
-                    <h2 class="column-heading">Social</h2>
-                    <ul>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </section>
-    <!-- Copyright-->
-    <section id="copyright">
-        <div class="container">
-            <p>&copy; Copyright 2021 Lluis Casamajor Paloma. All right Reserved</p>
-        </div>
-    </section>
-    <!-- Scripts AOS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+                    </section>
+                    <!-- Presentation -->
+                    <section id="Presentation">
+                        <div class="container">
+
+                            <!-- Left part of the section-->
+                            <div class="left_panel" data-aos="fade-right"
+                                data-aos-duration="1200" data-aos-delay="500"
+                                data-aos-easing="ease-in-out"
+                                data-aos-once="true">
+
+                                <p class="subheading">Hello, my name is</p>
+                                <h1 class="heading1">
+                                    <div class="wrapper"><span>Luis</span></div>
+                                    <div class="wrapper"><span>Casamajor</span></div>
+                                    <div class="wrapper"><span>Paloma</span></div>
+                                </h1>
+                                <p class="description">I'm Backend Developer
+                                    specialized in
+                                    web projects carried out
+                                    with Django Framework.</p>
+                                <div class="buttons">
+                                    <a href="#" class="primary-btn">See my
+                                        projects</a>
+                                    <!--Icono de la web https://heroicons.com/-->
+                                    <a href="#"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="1" d="M15 13l-3
+                                                3m0 0l-3-3m3 3V8m0 13a9 9 0
+                                                110-18 9 9 0 010 18z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+
+                                <!-- Right part of the section-->
+                                <div class="right_panel" data-aos="fade-right"
+                                    data-aos-duration="1200"
+                                    data-aos-delay="1500"
+                                    data-aos-easing="ease-in-out"
+                                    data-aos-once="true">
+
+                                    <img src="./images/LluisFoto.jpg" alt="Lluis
+                                        Casamajor
+                                        Paloma">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Tecnologías -->
+                        <section id="tecno">
+                            <div class="container">
+                                <h2 class="section-heading" data-outline="Used
+                                    technology">Used
+                                    technology</h2>
+                                <div class="all-items">
+                                    <div class="item">
+                                        <div class="icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1" d="M10
+                                                    20l4-16m4 4l4 4-4 4M6
+                                                    16l-4-4
+                                                    4-4" />
+                                                </svg></div>
+                                            <h3 class="item-heading">Backend
+                                                Stuff</h3>
+                                            <p class="item-desc">Using <Strong>Python</Strong>
+                                                as the main programming language
+                                                and
+                                                complementing it with its most
+                                                famous
+                                                framework, <Strong>Django</Strong>,
+                                                I create
+                                                powerful, safe and dynamic web
+                                                applications
+                                                without forgetting the creation
+                                                of Api-rest
+                                                with the <strong>Django REST
+                                                    Framework</strong>
+                                                technology.</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="icon"><svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none" viewBox="0 0 24
+                                                    24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="1" d="M4
+                                                        7v10c0 2.21
+                                                        3.582 4 8 4s8-1.79
+                                                        8-4V7M4 7c0 2.21 3.582 4
+                                                        8 4s8-1.79
+                                                        8-4M4 7c0-2.21 3.582-4
+                                                        8-4s8 1.79 8
+                                                        4m0
+                                                        5c0 2.21-3.582 4-8
+                                                        4s-8-1.79-8-4" />
+                                                    </svg></div>
+                                                <h3 class="item-heading">Use of
+                                                    Databases</h3>
+                                                <p class="item-desc">Constant
+                                                    knowledge of
+                                                    the
+                                                    <Strong>Mysql and PosgretSQL</Strong>
+                                                    database managers used in
+                                                    almost all my
+                                                    projects, other tools that I
+                                                    use and
+                                                    know
+                                                    are such as <Strong>
+                                                        Firebase or
+                                                        Microsoft
+                                                        SQL Server</Strong>
+                                                </p>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="icon"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none" viewBox="0 0
+                                                        24 24"
+                                                        stroke="currentColor">
+                                                        <path
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="1"
+                                                            d="M9.75 17L9
+                                                            20l-1
+                                                            1h8l-1-1-.75-3M3
+                                                            13h18M5 17h14a2
+                                                            2 0
+                                                            002-2V5a2 2 0
+                                                            00-2-2H5a2 2 0
+                                                            00-2
+                                                            2v10a2 2 0 002 2z"
+                                                            />
+                                                        </svg></div>
+                                                    <h3 class="item-heading">Front-end</h3>
+                                                    <p class="item-desc">I also
+                                                        have basic
+                                                        knowledge of HTML5,
+                                                        CSS3,
+                                                        Javascript,
+                                                        PHP, Wordpress and SEO.I
+                                                        also have basic
+                                                        knowledge of HTML5,
+                                                        CSS3,
+                                                        Javascript,
+                                                        PHP, Wordpress and SEO.</p>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!-- About me -->
+                                        <section id="about">
+                                            <div class="container">
+                                                <h2 class="section-heading"
+                                                    data-outline="About">About</h2>
+                                                <div class="wrapper">
+                                                    <div class="left">
+                                                        <div class="card">
+                                                            <div class="img">
+                                                                <img
+                                                                    src="./images/LluisFoto.jpg"
+                                                                    alt="Icon
+                                                                    lluis
+                                                                    casamajor">
+                                                            </div>
+                                                            <p
+                                                                class="card-desc">Graduated
+                                                                in
+                                                                multi-platform
+                                                                application
+                                                                development and
+                                                                in
+                                                                construction
+                                                                of new knowledge
+                                                                in the
+                                                                world of
+                                                                web development
+                                                                with
+                                                                constant
+                                                                renewal. Python
+                                                                Lover</p>
+                                                            <h3
+                                                                class="card-name">Backend
+                                                                Developer</h3>
+                                                            <p
+                                                                class="card-sub-title">Django
+                                                                Specialized
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="subheading">Some
+                                                            about me</p>
+                                                        <h2 class="slogan">Backend
+                                                            Developer</h2>
+                                                        <p class="right-text">My
+                                                            main
+                                                            objective is to
+                                                            develop
+                                                            professionally and
+                                                            evolve
+                                                            specializing in
+                                                            Backend
+                                                            development, I
+                                                            consider myself
+                                                            an organized person
+                                                            with great
+                                                            motivation, capable
+                                                            of adapting
+                                                            to new technologies
+                                                            or different
+                                                            environments. I love
+                                                            to continue
+                                                            learning and train
+                                                            myself to be
+                                                            able to give a
+                                                            little more
+                                                            quality and value to
+                                                            my projects
+                                                            every day.</p>
+                                                        <div class="buttons">
+                                                            <a
+                                                                href="./files/CV_Lluis_Casamajor.pdf"
+                                                                class="primary-btn">Download
+                                                                CV</a>
+                                                            <a
+                                                                href="https://www.linkedin.com/in/llu%C3%ADs-casamajor-paloma-b338a2206/"
+                                                                target="_blank"
+                                                                class="primary-btn
+                                                                outline">Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!--Projects-->
+                                        <section id="projects">
+                                            <div class="container">
+                                                <h2 class="section-heading"
+                                                    data-outline="Projects">Projects</h2>
+                                                <div class="all-items">
+                                                    <div class="item">
+                                                        <div class="left">
+                                                            <div class="img">
+                                                                <img
+                                                                    src="./images/LluisFoto.png"
+                                                                    alt="Project">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <h2
+                                                                class="project-title">EventCraft</h2>
+                                                            <h3
+                                                                class="project-sub-title">Segundo
+                                                                titulo</h3>
+                                                            <p
+                                                                class="project-desc">This
+                                                                project
+                                                                is for HTML &
+                                                                CSS practice.
+                                                                AMY
+                                                                is a fictional
+                                                                character. She
+                                                                is
+                                                                a freelance web
+                                                                designer. We
+                                                                made this nice
+                                                                portfolio for
+                                                                her
+                                                                with mainly HTML
+                                                                & CSS. Though
+                                                                we used few
+                                                                lines of JS but
+                                                                the
+                                                                main purpose of
+                                                                this project is
+                                                                to practice HTML
+                                                                & CSS. We are
+                                                                going to learn
+                                                                lots of </p>
+                                                            <div
+                                                                class="buttons">
+                                                                <a href=""
+                                                                    class="primary-btn">Github</a>
+                                                                <a href=""
+                                                                    class="primary-btn
+                                                                    outline
+                                                                    external-link"><span>Know
+                                                                        more</span><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        fill="none"
+                                                                        viewBox="0
+                                                                        0 24 24"
+                                                                        stroke="currentColor">
+                                                                        <path
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            stroke-width="2"
+                                                                            d="M10
+                                                                            21h7a2
+                                                                            2 0
+                                                                            002-2V9.414a1
+                                                                            1 0
+                                                                            00-.293-.707l-5.414-5.414A1
+                                                                            1 0
+                                                                            0012.586
+                                                                            3H7a2
+                                                                            2 0
+                                                                            00-2
+                                                                            2v11m0
+                                                                            5l4.879-4.879m0
+                                                                            0a3
+                                                                            3 0
+                                                                            104.243-4.242
+                                                                            3 3
+                                                                            0
+                                                                            00-4.243
+                                                                            4.242z"
+                                                                            />
+                                                                        </svg></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="left">
+                                                                <div
+                                                                    class="img">
+                                                                    <img
+                                                                        src="./images/LluisFoto.png"
+                                                                        alt="Project">
+                                                                </div>
+                                                            </div>
+                                                            <div class="right">
+                                                                <h2
+                                                                    class="project-title">EventCraft</h2>
+                                                                <h3
+                                                                    class="project-sub-title">Segundo
+                                                                    titulo</h3>
+                                                                <p
+                                                                    class="project-desc">This
+                                                                    project
+                                                                    is for HTML
+                                                                    & CSS
+                                                                    practice.
+                                                                    AMY
+                                                                    is a
+                                                                    fictional
+                                                                    character.
+                                                                    She is
+                                                                    a freelance
+                                                                    web
+                                                                    designer. We
+                                                                    made this
+                                                                    nice
+                                                                    portfolio
+                                                                    for her
+                                                                    with mainly
+                                                                    HTML & CSS.
+                                                                    Though
+                                                                    we used few
+                                                                    lines of JS
+                                                                    but the
+                                                                    main purpose
+                                                                    of this
+                                                                    project is
+                                                                    to practice
+                                                                    HTML & CSS.
+                                                                    We are
+                                                                    going to
+                                                                    learn lots
+                                                                    of </p>
+                                                                <div
+                                                                    class="buttons">
+                                                                    <a href=""
+                                                                        class="primary-btn">Github</a>
+                                                                    <a href=""
+                                                                        class="primary-btn
+                                                                        outline
+                                                                        external-link"><span>Know
+                                                                            more</span><svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            fill="none"
+                                                                            viewBox="0
+                                                                            0 24
+                                                                            24"
+                                                                            stroke="currentColor">
+                                                                            <path
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="2"
+                                                                                d="M10
+                                                                                21h7a2
+                                                                                2
+                                                                                0
+                                                                                002-2V9.414a1
+                                                                                1
+                                                                                0
+                                                                                00-.293-.707l-5.414-5.414A1
+                                                                                1
+                                                                                0
+                                                                                0012.586
+                                                                                3H7a2
+                                                                                2
+                                                                                0
+                                                                                00-2
+                                                                                2v11m0
+                                                                                5l4.879-4.879m0
+                                                                                0a3
+                                                                                3
+                                                                                0
+                                                                                104.243-4.242
+                                                                                3
+                                                                                3
+                                                                                0
+                                                                                00-4.243
+                                                                                4.242z"
+                                                                                />
+                                                                            </svg></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div
+                                                                    class="left">
+                                                                    <div
+                                                                        class="img">
+                                                                        <img
+                                                                            src="./images/LluisFoto.png"
+                                                                            alt="Project">
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="right">
+                                                                    <h2
+                                                                        class="project-title">EventCraft</h2>
+                                                                    <h3
+                                                                        class="project-sub-title">Segundo
+                                                                        titulo</h3>
+                                                                    <p
+                                                                        class="project-desc">This
+                                                                        project
+                                                                        is for
+                                                                        HTML &
+                                                                        CSS
+                                                                        practice.
+                                                                        AMY
+                                                                        is a
+                                                                        fictional
+                                                                        character.
+                                                                        She is
+                                                                        a
+                                                                        freelance
+                                                                        web
+                                                                        designer.
+                                                                        We
+                                                                        made
+                                                                        this
+                                                                        nice
+                                                                        portfolio
+                                                                        for her
+                                                                        with
+                                                                        mainly
+                                                                        HTML &
+                                                                        CSS.
+                                                                        Though
+                                                                        we used
+                                                                        few
+                                                                        lines of
+                                                                        JS but
+                                                                        the
+                                                                        main
+                                                                        purpose
+                                                                        of this
+                                                                        project
+                                                                        is
+                                                                        to
+                                                                        practice
+                                                                        HTML &
+                                                                        CSS. We
+                                                                        are
+                                                                        going to
+                                                                        learn
+                                                                        lots of
+                                                                    </p>
+                                                                    <div
+                                                                        class="buttons">
+                                                                        <a
+                                                                            href=""
+                                                                            class="primary-btn">Github</a>
+                                                                        <a
+                                                                            href=""
+                                                                            class="primary-btn
+                                                                            outline
+                                                                            external-link"><span>Know
+                                                                                more</span><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                fill="none"
+                                                                                viewBox="0
+                                                                                0
+                                                                                24
+                                                                                24"
+                                                                                stroke="currentColor">
+                                                                                <path
+                                                                                    stroke-linecap="round"
+                                                                                    stroke-linejoin="round"
+                                                                                    stroke-width="2"
+                                                                                    d="M10
+                                                                                    21h7a2
+                                                                                    2
+                                                                                    0
+                                                                                    002-2V9.414a1
+                                                                                    1
+                                                                                    0
+                                                                                    00-.293-.707l-5.414-5.414A1
+                                                                                    1
+                                                                                    0
+                                                                                    0012.586
+                                                                                    3H7a2
+                                                                                    2
+                                                                                    0
+                                                                                    00-2
+                                                                                    2v11m0
+                                                                                    5l4.879-4.879m0
+                                                                                    0a3
+                                                                                    3
+                                                                                    0
+                                                                                    104.243-4.242
+                                                                                    3
+                                                                                    3
+                                                                                    0
+                                                                                    00-4.243
+                                                                                    4.242z"
+                                                                                    />
+                                                                                </svg></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!--Footer-->
+                                                    <section id="footer">
+                                                        <div class="container">
+                                                            <footer>
+                                                                <div
+                                                                    class="col1">
+                                                                    <div
+                                                                        class="logo">
+                                                                        <a
+                                                                            href="#">
+                                                                            <img
+                                                                                src="./images/LluisFoto.jpg"
+                                                                                alt="logo">
+                                                                        </a>
+                                                                    </div>
+                                                                    <p>Texto
+                                                                        fasfasfasfwefwaefasefawfawefwafewqa</p>
+                                                                </div>
+                                                                <div
+                                                                    class="col2">
+                                                                    <h2
+                                                                        class="column-heading">Important
+                                                                        Link</h2>
+                                                                    <ul>
+                                                                        <li><a
+                                                                                href="#Presentation">Home</a></li>
+                                                                        <li><a
+                                                                                href="#tecno">Tecnologies</a></li>
+                                                                        <li><a
+                                                                                href="#about">About</a></li>
+                                                                        <li><a
+                                                                                href="#projects">Projects</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div
+                                                                    class="col3">
+                                                                    <h2
+                                                                        class="column-heading">Contact
+                                                                        info</h2>
+                                                                    <ul>
+                                                                        <li><a
+                                                                                href="#Presentation">contact@lluis.com</a></li>
+                                                                        <li><a
+                                                                                href="">Barcelona,
+                                                                                Spain</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div
+                                                                    class="col4">
+                                                                    <h2
+                                                                        class="column-heading">Social</h2>
+                                                                    <ul>
+                                                                        <li><a
+                                                                                href="#">Github</a></li>
+                                                                        <li><a
+                                                                                href="#">Linkedin</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </footer>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Copyright-->
+                                                    <section id="copyright">
+                                                        <div class="container">
+                                                            <p>&copy; Copyright
+                                                                2021 Lluis
+                                                                Casamajor
+                                                                Paloma. All
+                                                                right Reserved</p>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Scripts AOS-->
+                                                    <script
+                                                        src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                                    <script>
         AOS.init();
     </script>
+                                                </body>
 
-</body>
-
-</html>
+                                            </html>

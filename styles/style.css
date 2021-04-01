@@ -127,8 +127,8 @@ section{
 /******************** Navegation **********************/
 #nav {
     position: fixed;
-    right: 50px;
-    top: 50px;
+    right: 40px;
+    top: 30px;
     height: auto;
     z-index: 100;
 }
@@ -151,7 +151,7 @@ section{
     right: 0;
     width: 80%;
     height: 100%;
-    max-width: 800px;
+    max-width: 700px;
     z-index: 100;
     background-color: var(--primary-color);
     color: white;
@@ -159,6 +159,8 @@ section{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transform: translateX(100%);
+    transition: 0.3s ease transform;
 }
 #nav-content .section-heading{
     text-align: left;
@@ -182,21 +184,49 @@ section{
     display: inline-block;
     color: white;
     width: 100%;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: 'Montserrat',sans-serif;
 }
-.nav-content ul li a::after{
-    content: test;
+#nav-content ul li a::after{
+    content: attr(data-text);
     pointer-events: none;
     position: absolute;
     right: -150px;
     bottom: 38%;
+    width: 100%;
     color: transparent;
     -webkit-text-stroke: 1.5px #afadad25;
     opacity: 0;
     z-index: -1;
     text-align: center;
-    transform: rotate(98deg) scale(3);
+    transform: rotate(90deg) scale(3);
+    transition: .3s ease;
+    transition-property: opacity, transform;
+}
+#nav-content ul li a:hover::after{
+    opacity: 1;
+    transform: scale(3) translateY(10px) rotate(90deg);
+}
+#nav-content .close-btn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+}
+#nav-content .close-btn svg{
+    width: 80%;
+}
+#nav-content .close-btn:hover{
+    background-color: crimson;
 }
 
 /******************** Presentation **********************/

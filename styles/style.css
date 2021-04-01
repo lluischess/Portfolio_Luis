@@ -146,6 +146,46 @@ section{
     width: 80%;
 }
 
+#nav-content {
+    position: fixed;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    max-width: 800px;
+    z-index: 100;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#nav-content .section-heading{
+    text-align: left;
+}
+#nav-content .section-heading::before{
+    -webkit-text-stroke: 1.5px #afadad25;
+    text-align: left;
+}
+#nav-content .wrapper {
+    width: 70%;
+    position: relative;
+}
+#nav-content ul{
+    list-style:none;
+    text-align:left;
+}
+#nav-content ul li{
+    margin-bottom: 2rem;
+}
+#nav-content ul li a{
+    display: inline-block;
+    color: white;
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
 /******************** Presentation **********************/
 
 #Presentation {

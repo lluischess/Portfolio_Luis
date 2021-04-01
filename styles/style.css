@@ -21,6 +21,7 @@
 html{
     font-family: 'Roboto Mono', sans-serif;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body{
     /*Assignamos la var color al fondo */ 

@@ -98,6 +98,10 @@ section{
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+.show {
+    transform: translateX(0)!important;
+    box-shadow: -6px 0px 29px 7px #000000a3;
+}
 /********************* Scroll Top *************************************/
 .scroll-top {
     z-index: 100;
@@ -145,7 +149,6 @@ section{
     color: white;
     width: 80%;
 }
-
 #nav-content {
     position: fixed;
     right: 0;
@@ -195,7 +198,7 @@ section{
     bottom: 38%;
     width: 100%;
     color: transparent;
-    -webkit-text-stroke: 1.5px #afadad25;
+    -webkit-text-stroke: 1.5px #cccccc54;
     opacity: 0;
     z-index: -1;
     text-align: center;
@@ -204,8 +207,8 @@ section{
     transition-property: opacity, transform;
 }
 #nav-content ul li a:hover::after{
-    opacity: 1;
-    transform: scale(3) translateY(10px) rotate(90deg);
+    opacity: 10;
+    transform: scale(2) translateY(10px) rotate(90deg);
 }
 #nav-content .close-btn{
     position: absolute;
@@ -714,5 +717,36 @@ section{
 @media only screen and (max-width: 768px){
     #copyright p{
         text-align: center;
+    }
+}
+
+/************************* Responsive Navegation ********************************/
+
+@media only screen and (max-width: 768px){
+    #nav {
+        right: 10px;
+        top: 10px;
+    }
+    #nav-content nav ul li a::before{
+        display: none;
+    }
+    #nav-content .section-heading {
+        text-align: right;
+        margin-bottom: 5rem;
+    }
+    #nav-content .section-heading::before{
+        text-align: right;
+    }
+    #nav-content nav ul{
+        text-align: right;
+    }
+    #nav-content nav ul li a{
+        font-size: 2.5rem;
+    }
+    #nav-content .wrapper{
+        width: 90%;
+    }
+    #nav-content ul li a:hover::after{
+        opacity: 0;
     }
 }

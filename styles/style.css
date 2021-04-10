@@ -24,13 +24,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    overflow-x: hidden !important;
     /*Assignamos la var color al fondo */ 
-    background-color: var(--body-bg); 
+    background-color: var(--body-bg);
 }
 img{ 
     width: 100%;
     height: 100%;
-    border-radius: 35px;
+    border-radius: 5px;
 }
 a{
     /* Enlaces negros y sin decoración */
@@ -118,11 +119,15 @@ section{
     display: none;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 20px rgba(71, 40, 182, 8.226);
-    transform: scale(0.9);
-    transition: 0.3s ease ease-in-out transform;
+    box-shadow: 0px 0px 20px rgba(71, 40, 182, 0.3);
 
+    transition: all 0.2s ease-out;
 }
+
+.scroll-top:hover{
+    transform: translateY(-5px);
+}
+
 .scroll-top svg {
     width: 50%;
     color: black;
@@ -137,30 +142,31 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 58px;
+    height: 48px;
     background-color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
     user-select: none;
-    padding-top: 2.2rem;
+
     font-weight: 100;
 }
 #screen_nav .nav__ul {
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 #screen_nav .nav__li {
     display: inline;
-    font-size: 1.5rem;
-    padding: 1rem;
+
+    padding: 0 20px;
     gap: 1rem;
     top: 2rem;
 }
 
 #screen_nav .nav__a {
-    padding: 16px 0px;
+    padding: 0px 0px;
     color: white;
-    
+    font-size: 1.5rem;
+    transition: opacity 0.2s ease-out;
 }
 
 #screen_nav .nav__a:hover {
@@ -180,8 +186,9 @@ section{
     right: 40px;
     top: 30px;
     height: auto;
-    z-index: 100;
+    z-index: 1000;
     opacity: 0;
+    pointer-events: none;
 }
 #nav .nav-icon{
     width: 50px;
@@ -197,12 +204,12 @@ section{
     width: 80%;
 }
 #nav-content {
+    z-index: 1000;
     position: fixed;
     right: 0;
     width: 80%;
     height: 100%;
     max-width: 700px;
-    z-index: 100;
     background-color: var(--primary-color);
     color: white;
     display: flex;
@@ -375,6 +382,7 @@ section{
 #tecno .item {
     padding: 1.5rem;
     border-radius: 12px;
+    transition: all 0.2s ease-out;
 }
 
 #tecno .item:nth-child(1):hover {
@@ -517,7 +525,7 @@ section{
 }
 #projects .item .left .img  img{
     object-fit: cover;
-    transition: 0.3 ease transform;
+    transition: transform 0.2s ease-out;
 }
 #projects .item:hover .left .img img {
     transform: scale(1.1);
@@ -911,6 +919,7 @@ section{
         opacity: 1;
         right: 10px;
         top: 10px;
+        pointer-events: all;
     }
     #screen_nav {
         opacity: 0;

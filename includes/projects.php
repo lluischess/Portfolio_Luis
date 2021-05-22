@@ -46,22 +46,22 @@ class Proyecto
             # Getters
 
             public function get_Titulo_Proyecto(){
-              return this->Titulo_Proyecto;
+              return $this->Titulo_Proyecto;
             }
             public function get_Titulo2_Proyecto(){
-              return this->Titulo2_Proyecto;
+              return $this->Titulo2_Proyecto;
             }
             public function get_Imagen_Proyecto(){
-              return this->Imagen_Proyecto;
+              return $this->Imagen_Proyecto;
             }
             public function get_Descripcion_Proyecto(){
-              return this->Descripcion_Proyecto;
+              return $this->Descripcion_Proyecto;
             }
             public function get_Github(){
-              return this->Github;
+              return $this->Github;
             }
             public function get_Demo(){
-              return this->Demo;
+              return $this->Demo;
             }
 
             # Setters
@@ -95,7 +95,7 @@ class Proyecto
 
             public function SelectfullProjects(){
               $db = new Conexion();
-              $sql = $db->query("SELECT * FROM T_projects; ");
+              $sql = $db->query("SELECT * FROM T_projects ORDER BY id DESC; ");
               if ($db->rows($sql) > 0) {
                   while ($t = $db->recorrer($sql)) {
                       $datos[] =  array(

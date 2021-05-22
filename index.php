@@ -12,9 +12,9 @@
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <link rel="stylesheet" href="./styles/style.css">
    <?php include("includes/projects.php"); 
-   $event = new Evento();
+   $event = new Proyecto();
    $db = new Conexion();
-   $datos = $event->Selectfull();
+   $datos = $event->SelectfullProjects();
    ?>
 </head>
 
@@ -84,10 +84,10 @@
                with Django Framework.
             </p>
             <div class="buttons">
-               <a href="#" class="primary-btn">See my
+               <a href="#projects" class="primary-btn">See my
                   projects</a>
                <!--Icono de la web https://heroicons.com/-->
-               <a href="#">
+               <a href="#projects">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 13l-3
                            3m0 0l-3-3m3 3V8m0 13a9 9 0
@@ -333,10 +333,11 @@
                      </a>
                   </div>
                </div>
-            </div>"
-                  }else{
-                     echo "No hay resultados para mostrar"
+            </div>";
                   }
+
+               }else{
+                  echo "No hay resultados para mostrar";
                } 
 
             ?>

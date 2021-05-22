@@ -298,28 +298,18 @@
                         <div class='img'>
                            <img src='.". $total['fImg'] ."' alt='Project'>
                         </div>
-                     </div>"
-                  }
-               } 
-
-            ?>
-            <div class="item">
-               <div class="left">
-                  <div class="img">
-                     <img src="./images/LluisFoto.png" alt="Project">
-                  </div>
-               </div>
-               <div class="right">
-                  <h2 class="project-title">EventCraft</h2>
-                  <h3 class="project-sub-title">Segundo</h3>
-                  <p class="project-desc"></p>
-                  <div class="buttons">
-                     <a href="" class="primary-btn">Github</a>
-                     <a href="" class="primary-btn outline external-link">
-                        <span>Know more</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0
-                              0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10
+                     </div>
+                     <div class='right'>
+                        <h2 class='project-title'>". $total['fTitle'] ."</h2>
+                        <h3 class='project-sub-title'>". $total['fTitle2'] ."</h3>
+                        <p class='project-desc'>". $total['fDesc'] ."</p>
+                        <div class='buttons'>
+                           <a href='". $total['fGithubLink'] ."' class='primary-btn'>Github</a>
+                           <a href='". $total['fDemoLink'] ."' class='primary-btn outline external-link'>
+                              <span>Know more</span>
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0
+                              0 24 24' stroke='currentColor'>
+                           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M10
                                  21h7a2
                                  2 0
                                  002-2V9.414a1
@@ -338,12 +328,18 @@
                                  3 3
                                  0
                                  00-4.243
-                                 4.242z" />
+                                 4.242z' />
                         </svg>
                      </a>
                   </div>
                </div>
-            </div>
+            </div>"
+                  }else{
+                     echo "No hay resultados para mostrar"
+                  }
+               } 
+
+            ?>
          </div>
       </div>
    </section>

@@ -5,10 +5,10 @@
 /*************** Variables ***************/
 :root{
     /* Colors */
-     --primary-color: #512B78;
+     --primary-color: #0C4B33;
     --secondary-color: rgb(77, 77, 77);
-    --third-color:#411fa0;
-    --body-bg: #efebfa; 
+    --third-color:#44B78B;
+    --body-bg: #f8f8f8; 
 
 }
 
@@ -92,7 +92,7 @@ section{
     font-family: 'Montserrat';
     letter-spacing: 0.2rem;
     color: transparent;
-    -webkit-text-stroke: 1.5px #5a24ed2f;
+    -webkit-text-stroke: 1.5px #0000002f;
     z-index: -1;
 }
 .buttons .outline {
@@ -511,7 +511,7 @@ section{
     height: 500px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px #4705fc33;
+    box-shadow: 0px 0px 20px #00000033;
     position: relative;
 }
 #projects .item .left .img::after {
@@ -521,7 +521,7 @@ section{
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: #5a24ed17;
+    background-color: #0000002e;
 }
 #projects .item .left .img  img{
     object-fit: cover;
@@ -761,7 +761,7 @@ section{
 
 #copyright {
     padding: 1rem 0;
-    background-color: #221052;
+    background-color: #0a3321;
 }
 #copyright p{
     color: white;

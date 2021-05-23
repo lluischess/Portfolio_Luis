@@ -391,7 +391,7 @@
             </div>
             <div class="right">
                <div class="form-wrapper">
-                  <form method="post" action="">
+                  <form action="">
                      <div class="form-group">
                         <label for="name">Your name</label>
                         <div class="input-wrapper">
@@ -422,22 +422,8 @@
                         <label for="message">Message</label>
                         <textarea type="text" name="message" id="message" width="100%"></textarea>
                      </div>
-                     <button type="submit" value="Submit" onclick="hizoClick()">Send</button>
+                     <button type="submit"><a href="javascript: window.location.href = 'mailto:luis@timetastudio.com?subject='+ document.getElementById('name').value +' request&body='+ document.getElementById('message').value; +'';" >Send</a> </button>
                   </form>
-                  <script>
-                     function hizoClick() {
-                     var nombre = document.getElementById("name").value;
-                     var correo = document.getElementById("email").value;
-                     var mensaje = document.getElementById("mensaje").value;
-                     location.href = "mailto:mail@example.org?subject="+ nombre +" request&body="+mensaje;
-                     if (nombre == "" || correo == "") {
-                           alert("Need to complete this form"); 
-                     } else {
-                        alert("Sended!");
-                     }
-                     }
-                     
-                  </script>
                </div>
             </div>
          </div>

@@ -78,10 +78,7 @@
                <div class="wrapper"><span>Casamajor</span></div>
                <div class="wrapper"><span>Paloma</span></div>
             </h1>
-            <p class="description">I'm Backend Developer
-               specialized in
-               web projects carried out
-               with Django Framework.
+            <p class="description">I'm Back-end Developer, specialized in web projects carried out with Django Framework. And improving day by day my skills in this amazing world.
             </p>
             <div class="buttons">
                <a href="#projects" class="primary-btn">See my
@@ -172,7 +169,7 @@
                   are such as <Strong>
                      Firebase or
                      Microsoft
-                     SQL Server</Strong>
+                     SQL Server.</Strong>
                </p>
             </div>
             <div class="item">
@@ -195,13 +192,7 @@
                   have basic
                   knowledge of HTML5,
                   CSS3,
-                  Javascript,
-                  PHP, Wordpress and SEO.I
-                  also have basic
-                  knowledge of HTML5,
-                  CSS3,
-                  Javascript,
-                  PHP, Wordpress and SEO.
+                  Javascript, Wordpress, Joomla, Prestashop and SEO basics.
                </p>
             </div>
          </div>
@@ -218,23 +209,9 @@
                            lluis
                            casamajor">
                   </div>
-                  <p class="card-desc">Graduated
-                     in
-                     multi-platform
-                     application
-                     development and
-                     in
-                     construction
-                     of new knowledge
-                     in the
-                     world of
-                     web development
-                     with
-                     constant
-                     renewal. Python
-                     Lover
+                  <p class="card-desc">Graduated in multi-platform application development and in the construction of new knowledge in the world of web development with constant renewal. Python Lover
                   </p>
-                  <h3 class="card-name">Backend
+                  <h3 class="card-name">Back-end
                      Developer
                   </h3>
                   <p class="card-sub-title">Django
@@ -246,34 +223,9 @@
                <p class="subheading">Some
                   about me
                </p>
-               <h2 class="slogan">Backend
-                  Developer
+               <h2 class="slogan">Back-end Developer
                </h2>
-               <p class="right-text">My
-                  main
-                  objective is to
-                  develop
-                  professionally and
-                  evolve
-                  specializing in
-                  Backend
-                  development, I
-                  consider myself
-                  an organized person
-                  with great
-                  motivation, capable
-                  of adapting
-                  to new technologies
-                  or different
-                  environments. I love
-                  to continue
-                  learning and train
-                  myself to be
-                  able to give a
-                  little more
-                  quality and value to
-                  my projects
-                  every day.
+               <p class="right-text">My main objective is to develop professionally and evolve specializing in back-end development, I consider myself an organized person with great motivation, capable of adapting to new technologies or different environments. I love to continue learning and train myself to be able to give a little more quality and value to my projects everyday.
                </p>
                <div class="buttons">
                   <a href="./files/CV_Lluis_Casamajor.pdf" class="primary-btn">Download
@@ -355,7 +307,7 @@
                <h2 class="contact-heading">
                   Contact me
                </h2>
-               <p class="contact-desc">Hey, if you need me you can send me a mail using this contact form</p>
+               <p class="contact-desc">Hey, if you need me, you can send me a mail using this contact form.</p>
 
                <div class="contact-info">
                   <ul>
@@ -439,7 +391,7 @@
                </h2>
                <ul>
                   <li><a href="#Presentation">Home</a></li>
-                  <li><a href="#tecno">Tecnologies</a></li>
+                  <li><a href="#tecno">Technologies</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#projects">Projects</a></li>
                </ul>

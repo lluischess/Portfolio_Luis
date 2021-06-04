@@ -78,7 +78,7 @@
                <div class="wrapper"><span>Casamajor</span></div>
                <div class="wrapper"><span>Paloma</span></div>
             </h1>
-            <p class="description">I'm Back-end Developer, specialized in web projects carried out with Django Framework. And improving day by day my skills in this amazing world.
+            <p class="description">I am a Back-end Developer, I am good at web projects using Django Framework with Python. I also have a strong foundation developing web projects using Wordpress, from the native creation of themes to the creation of custom plugins with PHP. And improving day by day my skills in this amazing world.
             </p>
             <div class="buttons">
                <a href="#projects" class="primary-btn">See my

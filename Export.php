@@ -101,7 +101,7 @@
 
     $file = fopen("archivo.txt", "w");
     if (!empty($_POST["1Question"])) {
-        fwrite($file, $pregunta1 . PHP_EOL);
+        fwrite($file, $pregunta1 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["1checkboxes1"])) {
@@ -132,7 +132,7 @@
     }
 
     if (!empty($_POST["2Question"])) {
-        fwrite($file, $pregunta2 . PHP_EOL);
+        fwrite($file, $pregunta2 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["2checkboxes1"])) {
@@ -164,7 +164,7 @@
 
 
     if (!empty($_POST["3Question"])) {
-        fwrite($file, $pregunta3 . PHP_EOL);
+        fwrite($file, $pregunta3 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["3checkboxes1"])) {
@@ -195,7 +195,7 @@
     }
 
     if (!empty($_POST["4Question"])) {
-        fwrite($file, $pregunta4 . PHP_EOL);
+        fwrite($file, $pregunta4 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["4checkboxes1"])) {
@@ -226,7 +226,7 @@
     }
 
     if (!empty($_POST["5Question"])) {
-        fwrite($file, $pregunta5 . PHP_EOL);
+        fwrite($file, $pregunta5 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["5checkboxes1"])) {
@@ -257,7 +257,7 @@
     }
 
     if (!empty($_POST["6Question"])) {
-        fwrite($file, $pregunta6 . PHP_EOL);
+        fwrite($file, $pregunta6 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["6checkboxes1"])) {
@@ -288,7 +288,7 @@
     }
 
     if (!empty($_POST["7Question"])) {
-        fwrite($file, $pregunta7 . PHP_EOL);
+        fwrite($file, $pregunta7 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["7checkboxes1"])) {
@@ -319,7 +319,7 @@
     }
 
     if (!empty($_POST["8Question"])) {
-        fwrite($file, $pregunta8 . PHP_EOL);
+        fwrite($file, $pregunta8 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["8checkboxes1"])) {
@@ -350,7 +350,7 @@
     }
 
     if (!empty($_POST["9Question"])) {
-        fwrite($file, $pregunta9 . PHP_EOL);
+        fwrite($file, $pregunta9 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["9checkboxes1"])) {
@@ -381,7 +381,7 @@
     }
 
     if (!empty($_POST["10Question"])) {
-        fwrite($file, $pregunta10 . PHP_EOL);
+        fwrite($file, $pregunta10 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["10checkboxes1"])) {
@@ -412,7 +412,7 @@
     }
 
     if (!empty($_POST["11Question"])) {
-        fwrite($file, $pregunta11 . PHP_EOL);
+        fwrite($file, $pregunta11 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["11checkboxes1"])) {
@@ -443,7 +443,7 @@
     }
 
     if (!empty($_POST["12Question"])) {
-        fwrite($file, $pregunta12 . PHP_EOL);
+        fwrite($file, $pregunta12 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["12checkboxes1"])) {
@@ -474,7 +474,7 @@
     }
 
     if (!empty($_POST["13Question"])) {
-        fwrite($file, $pregunta13 . PHP_EOL);
+        fwrite($file, $pregunta13 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["13checkboxes1"])) {
@@ -505,7 +505,7 @@
     }
 
     if (!empty($_POST["14Question"])) {
-        fwrite($file, $pregunta14 . PHP_EOL);
+        fwrite($file, $pregunta14 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["14checkboxes1"])) {
@@ -536,7 +536,7 @@
     }
 
     if (!empty($_POST["15Question"])) {
-        fwrite($file, $pregunta15 . PHP_EOL);
+        fwrite($file, $pregunta15 . ":" . PHP_EOL);
         fwrite($file, "{" . PHP_EOL);
 
         if (!isset($_POST["15checkboxes1"])) {

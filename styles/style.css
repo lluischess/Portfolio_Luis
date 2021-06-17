@@ -5,7 +5,8 @@
 /*************** Variables ***************/
 :root{
     /* Colors */
-     --primary-color: #0C4B33;
+     /* --primary-color: #0C4B33; */
+    --primary-color: #0C4B33;
     --secondary-color: rgb(77, 77, 77);
     --third-color:#44B78B;
     --body-bg: #f8f8f8; 
@@ -560,13 +561,19 @@ section{
     padding: 10rem 0;
 }
 #contact .wrapper {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#contact .wrapper2 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 5rem;
 }
-#contact .wrapper .left
-#contact .wrapper .right {
+#contact .wrapper2 .left
+#contact .wrapper2 .right {
     flex: 1;
 }
 #contact .left .contact-heading{
@@ -622,13 +629,21 @@ section{
 }
 #contact .right .form-wrapper {
     background-color: var(--primary-color);
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#contact .right .form-wrapper2 {
+    background-color: var(--primary-color);
     max-width: 500px;
     margin: 0 auto;
     padding: 5rem;
     border-radius: 12px;
     color: white;
 }
-#contact .right .form-wrapper svg{
+#contact .right .form-wrapper2 svg{
     width: 25px;
 }
 #contact .right .form-group {
@@ -676,7 +691,7 @@ section{
     border-radius: 4px;
     font-size: 1.4rem;
 }
-#contact .right .form-wrapper button{
+#contact .right .form-wrapper2 button{
     display: inline-block;
     width: 150px;
     font-size: 1.4rem;
@@ -954,7 +969,7 @@ section{
 /*************** Responsive Contact Form ***************/
 
 @media only screen and (max-width: 768px){
-    #contact .wrapper {
+    #contact .wrapper2 {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -962,7 +977,7 @@ section{
     #contact .right{
         width: 100%;
     }
-    #contact .right .form-wrapper{
+    #contact .right .form-wrapper2{
         padding: 3rem;
         width: 100%;
         max-width: 100%;

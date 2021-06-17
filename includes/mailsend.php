@@ -1,12 +1,12 @@
 <?php
 // include("index.php");
-// use PHPMailer;
+// use PHP1Answer1er;
 
-// if(isset($_POST['email'])) {
+// if(isset($_POST['e1Answer1'])) {
  
 //     // EDIT THE 2 LINES BELOW AS REQUIRED
-//     $email_to = "luis@trimetastudio.com";
-//     $email_subject = "Your email subject line";
+//     $e1Answer1_to = "luis@trimetastudio.com";
+//     $e1Answer1_subject = "Your e1Answer1 subject line";
  
 //     function died($error) {
 //         // your error code can go here
@@ -20,7 +20,7 @@
  
 //     // validation expected data exists
 //     if(!isset($_POST['name']) ||
-//         !isset($_POST['email']) ||
+//         !isset($_POST['e1Answer1']) ||
 //         !isset($_POST['message'])) {
 //     	echo "Something dosent work";
 //          died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -29,14 +29,14 @@
      
  
 //     $first_name = $_POST['name']; // required
-//     $email_from = $_POST['email']; // required
+//     $e1Answer1_from = $_POST['e1Answer1']; // required
 //     $comments = $_POST['message']; // required
  
 //     $error_message = "";
-//     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+//     $e1Answer1_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-//   if(!preg_match($email_exp,$email_from)) {
-//     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+//   if(!preg_match($e1Answer1_exp,$e1Answer1_from)) {
+//     $error_message .= 'The E1Answer1 Address you entered does not appear to be valid.<br />';
 //   }
  
 //     $string_exp = "/^[A-Za-z .'-]+$/";
@@ -53,7 +53,7 @@
 //     died($error_message);
 //   }
  
-//     $email_message = "Form details below.\n\n";
+//     $e1Answer1_message = "Form details below.\n\n";
  
      
 //     function clean_string($string) {
@@ -63,17 +63,17 @@
  
      
  
-//     $email_message .= "Name: ".clean_string($first_name)."\n";
-//     $email_message .= "Email: ".clean_string($email_from)."\n";
-//     $email_message .= "Descripción: ".clean_string($comments)."\n";
+//     $e1Answer1_message .= "Name: ".clean_string($first_name)."\n";
+//     $e1Answer1_message .= "E1Answer1: ".clean_string($e1Answer1_from)."\n";
+//     $e1Answer1_message .= "Descripción: ".clean_string($comments)."\n";
 
  
-//     // create email headers
-//     $headers = 'From: '.$email_from."\r\n".
-//     'Reply-To: '.$email_from."\r\n" .
-//     'X-Mailer: PHP/' . phpversion();
+//     // create e1Answer1 headers
+//     $headers = 'From: '.$e1Answer1_from."\r\n".
+//     'Reply-To: '.$e1Answer1_from."\r\n" .
+//     'X-1Answer1er: PHP/' . phpversion();
 
-//     @mail($email_to,$email_subject, $email_message, $headers);
+//     @1Answer1($e1Answer1_to,$e1Answer1_subject, $e1Answer1_message, $headers);
 
     
 // }

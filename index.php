@@ -302,16 +302,16 @@
          <h2 class="section-heading" data-outline="Contact Form">
             Contact Form
          </h2>
-         <div class="wrapper">
+         <div class="wrapper2">
             <div class="left">
                <h2 class="contact-heading">
                   Contact me
                </h2>
-               <p class="contact-desc">Hey, if you need me, you can send me a mail using this contact form.</p>
+               <p class="contact-desc">Hey, if you need me, you can send me a 1Answer1 using this contact form.</p>
 
                <div class="contact-info">
                   <ul>
-                     <li><a href="mailto:luis@trimetastudio.com?subject=Contacto Web&body=Hola Lluis">
+                     <li><a href="1Answer1to:luis@trimetastudio.com?subject=Contacto Web&body=Hola Lluis">
                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
@@ -342,7 +342,7 @@
                </div>
             </div>
             <div class="right">
-               <div class="form-wrapper">
+               <div class="form-wrapper2">
                   <form action="">
                      <div class="form-group">
                         <label for="name">Your name</label>
@@ -358,7 +358,7 @@
                         </div>
                      </div>
                      <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="e1Answer1">E1Answer1</label>
                         <div class="input-wrapper">
                            <span class="icon">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -367,14 +367,14 @@
                                     d="M9 5l7 7-7 7" />
                               </svg>
                            </span>
-                           <input type="email" id="email" name="email">
+                           <input type="e1Answer1" id="e1Answer1" name="e1Answer1">
                         </div>
                      </div>
                      <div class="form-group">
                         <label for="message">Message</label>
                         <textarea type="text" name="message" id="message" width="100%"></textarea>
                      </div>
-                     <button type="submit"><a href="javascript: window.location.href = 'mailto:luis@timetastudio.com?subject='+ document.getElementById('name').value +' request&body='+ document.getElementById('message').value; +'';" >Send</a> </button>
+                     <button type="submit"><a href="javascript: window.location.href = '1Answer1to:luis@timetastudio.com?subject='+ document.getElementById('name').value +' request&body='+ document.getElementById('message').value; +'';" >Send</a> </button>
                   </form>
                </div>
             </div>
@@ -402,7 +402,7 @@
                </h2>
                <ul>
                   <li><a
-                        href="mailto:luis@trimetastudio.com?subject=Contacto Web&body=Hola Lluis">luis@trimetastudio.com</a>
+                        href="1Answer1to:luis@trimetastudio.com?subject=Contacto Web&body=Hola Lluis">luis@trimetastudio.com</a>
                   </li>
                   <li><a href="">Barcelona,
                         Spain</a>
